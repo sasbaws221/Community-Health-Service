@@ -1,0 +1,404 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  comments             Comment[]
+  communitySupports    CommunitySupport[]
+  createdAt            DateTime              @default(now())
+  dailyActivities      DailyActivity[]
+  discussions          Discussion[]
+  educations           Education[]
+  email                String?               @unique
+  financialAssistances FinancialAssistance[]
+  firstName            String?
+  healthActivities     HealthActivity[]
+  healthAndWellnesses  HealthAndWellness[]
+  id                   String                @id @default(uuid())
+  isActive             Boolean?
+  lastName             String?
+  localEvents          LocalEvent[]
+  medicalPractitioners MedicalPractitioner[]
+  medicationOrders     MedicationOrder[]
+  password             String
+  resourcesAndAdvices  ResourcesAndAdvice[]
+  reviews              Review[]
+  roles                Json
+  updatedAt            DateTime              @updatedAt
+  username             String                @unique
+  wellnessGoals        WellnessGoal[]
+}
+
+model Discussion {
+  comment   Comment[]
+  content   String?
+  createdAt DateTime              @default(now())
+  id        String                @id @default(uuid())
+  status    EnumDiscussionStatus?
+  title     String?
+  topic     EnumDiscussionTopic?
+  updatedAt DateTime              @updatedAt
+  user      User?                 @relation(fields: [userId], references: [id])
+  userId    String?
+}
+
+model Comment {
+  comments              String?
+  createdAt             DateTime            @default(now())
+  discussions           Discussion?         @relation(fields: [discussionsId], references: [id])
+  discussionsId         String?
+  healthAndWellnesses   HealthAndWellness?  @relation(fields: [healthAndWellnessesId], references: [id])
+  healthAndWellnessesId String?
+  id                    String              @id @default(uuid())
+  localEvents           LocalEvent?         @relation(fields: [localEventsId], references: [id])
+  localEventsId         String?
+  resourcesAndAdvices   ResourcesAndAdvice? @relation(fields: [resourcesAndAdvicesId], references: [id])
+  resourcesAndAdvicesId String?
+  title                 String?
+  updatedAt             DateTime            @updatedAt
+  user                  User?               @relation(fields: [userId], references: [id])
+  userId                String?
+}
+
+model Appointment {
+  contact   Int?
+  createdAt DateTime               @default(now())
+  email     String?
+  id        String                 @id @default(uuid())
+  location  String?
+  message   String?
+  name      String?
+  status    EnumAppointmentStatus?
+  updatedAt DateTime               @updatedAt
+}
+
+model Contact {
+  contact   Int?
+  createdAt DateTime           @default(now())
+  email     String?
+  id        String             @id @default(uuid())
+  message   String?
+  name      String?
+  status    EnumContactStatus?
+  subject   String?
+  updatedAt DateTime           @updatedAt
+}
+
+model LocalEvent {
+  category    EnumLocalEventCategory?
+  comment     Comment[]
+  contact     Int?
+  createdAt   DateTime                @default(now())
+  description String?
+  eventDate   DateTime?
+  id          String                  @id @default(uuid())
+  location    String?
+  title       String?
+  updatedAt   DateTime                @updatedAt
+  user        User[]
+}
+
+model HealthAndWellness {
+  category   Category? @relation(fields: [categoryId], references: [id])
+  categoryId String?   @unique
+  comment    Comment[]
+  content    String?
+  createdAt  DateTime  @default(now())
+  id         String    @id @default(uuid())
+  tags       String?
+  title      String?
+  updatedAt  DateTime  @updatedAt
+  user       User[]
+}
+
+model ResourcesAndAdvice {
+  author     String?
+  category   Category? @relation(fields: [categoryId], references: [id])
+  categoryId String?
+  comment    Comment[]
+  content    String?
+  createdAt  DateTime  @default(now())
+  id         String    @id @default(uuid())
+  link       String?
+  tag        String?
+  title      String?
+  updatedAt  DateTime  @updatedAt
+  user       User[]
+}
+
+model DailyActivity {
+  createdAt   DateTime               @default(now())
+  date        DateTime?
+  exercise    String?
+  id          String                 @id @default(uuid())
+  meals       String?
+  mood        EnumDailyActivityMood?
+  note        String?
+  sleepHours  Decimal?
+  user        User?                  @relation(fields: [userId], references: [id])
+  userId      String?
+  waterIntake Decimal?
+}
+
+model WellnessGoal {
+  createdAt       DateTime                   @default(now())
+  currentProgress Decimal?
+  endDate         DateTime?
+  frequency       EnumWellnessGoalFrequency?
+  goal            String?
+  id              String                     @id @default(uuid())
+  startDate       DateTime?
+  status          EnumWellnessGoalStatus?
+  targetValue     Decimal?
+  updatedAt       DateTime                   @updatedAt
+  user            User?                      @relation(fields: [userId], references: [id])
+  userId          String?
+}
+
+model HealthActivity {
+  activity     String?
+  activityDate DateTime?
+  createdAt    DateTime  @default(now())
+  description  String?
+  duration     Decimal?
+  id           String    @id @default(uuid())
+  note         String?
+  updatedAt    DateTime  @updatedAt
+  user         User?     @relation(fields: [userId], references: [id])
+  userId       String?
+}
+
+model Education {
+  category        Category?                     @relation(fields: [categoryId], references: [id])
+  categoryId      String?
+  createdAt       DateTime                      @default(now())
+  description     EnumEducationDescription?
+  difficultyLevel EnumEducationDifficultyLevel?
+  duration        String?
+  id              String                        @id @default(uuid())
+  link            String?
+  title           String?
+  updatedAt       DateTime                      @updatedAt
+  user            User[]
+}
+
+model CommunitySupport {
+  createdAt      DateTime                    @default(now())
+  id             String                      @id @default(uuid())
+  isAdmin        Boolean?
+  messageContent String?
+  sender         User?                       @relation(fields: [senderId], references: [id])
+  senderId       String?
+  status         EnumCommunitySupportStatus?
+  updatedAt      DateTime                    @updatedAt
+}
+
+model FinancialAssistance {
+  adminComments String?
+  amount        Decimal?
+  createdAt     DateTime                       @default(now())
+  description   String?
+  id            String                         @id @default(uuid())
+  status        EnumFinancialAssistanceStatus?
+  supportType   Finance?                       @relation(fields: [supportTypeId], references: [id])
+  supportTypeId String?                        @unique
+  updatedAt     DateTime                       @updatedAt
+  user          User?                          @relation(fields: [userId], references: [id])
+  userId        String?
+}
+
+model Finance {
+  createdAt            DateTime             @default(now())
+  description          String?
+  financialAssistances FinancialAssistance?
+  id                   String               @id @default(uuid())
+  supportName          String?
+  updatedAt            DateTime             @updatedAt
+}
+
+model Medication {
+  category         String?
+  createdAt        DateTime          @default(now())
+  description      String?
+  id               String            @id @default(uuid())
+  medicationOrders MedicationOrder[]
+  name             String?
+  recommendedFor   String?
+  reviews          Review[]
+  sideEffects      String?
+  updatedAt        DateTime          @updatedAt
+}
+
+model MedicationOrder {
+  createdAt   DateTime                   @default(now())
+  deliveredAt DateTime?
+  id          String                     @id @default(uuid())
+  medication  Medication[]
+  orderedAt   DateTime?
+  quantity    Int?
+  status      EnumMedicationOrderStatus?
+  updatedAt   DateTime                   @updatedAt
+  user        User?                      @relation(fields: [userId], references: [id])
+  userId      String?
+}
+
+model Review {
+  createdAt    DateTime               @default(now())
+  id           String                 @id @default(uuid())
+  medication   Medication?            @relation(fields: [medicationId], references: [id])
+  medicationId String?
+  productType  EnumReviewProductType?
+  rating       EnumReviewRating?
+  review       String?
+  updatedAt    DateTime               @updatedAt
+  user         User?                  @relation(fields: [userId], references: [id])
+  userId       String?
+}
+
+model Category {
+  categories          EnumCategoryCategories?
+  createdAt           DateTime                @default(now())
+  educations          Education[]
+  healthAndWellnesses HealthAndWellness?
+  id                  String                  @id @default(uuid())
+  resourcesAndAdvices ResourcesAndAdvice[]
+  updatedAt           DateTime                @updatedAt
+}
+
+model MedicalPractitioner {
+  bio               String?
+  contact           String?
+  createdAt         DateTime @default(now())
+  id                String   @id @default(uuid())
+  licenseNumber     String?
+  specialization    String?
+  updatedAt         DateTime @updatedAt
+  user              User?    @relation(fields: [userId], references: [id])
+  userId            String?
+  yearsOfExperience String?
+}
+
+model Company {
+  createdAt   DateTime @default(now())
+  description String?
+  id          String   @id @default(uuid())
+  name        String?
+  offers      String?
+  price       Float?
+  updatedAt   DateTime @updatedAt
+}
+
+enum EnumDiscussionStatus {
+  Open
+  Closed
+}
+
+enum EnumDiscussionTopic {
+  Health
+  Events
+  ResourcesAndAdvice
+  Tips
+}
+
+enum EnumAppointmentStatus {
+  Scheduled
+  Completed
+  Cancelled
+  Rescheduled
+}
+
+enum EnumContactStatus {
+  New
+  Read
+  Responded
+}
+
+enum EnumLocalEventCategory {
+  Workshop
+  SupportGroup
+  HealthScreening
+  Seminar
+  ExerciseClass
+}
+
+enum EnumDailyActivityMood {
+  Happy
+  Neutral
+  Sad
+  Stressed
+  Energetic
+}
+
+enum EnumWellnessGoalFrequency {
+  Daily
+  Weekly
+  Monthly
+}
+
+enum EnumWellnessGoalStatus {
+  InProgress
+  Completed
+  Paused
+  Cancelled
+}
+
+enum EnumEducationDescription {
+  MentalHealth
+  Nutrition
+  Fitness
+  ChronicCondition
+  GeneralHealth
+  SelfCare
+}
+
+enum EnumEducationDifficultyLevel {
+  Beginner
+  Intermediate
+  Advanced
+}
+
+enum EnumCommunitySupportStatus {
+  Sent
+  Received
+  Read
+}
+
+enum EnumFinancialAssistanceStatus {
+  Pending
+  Approval
+  Rejected
+}
+
+enum EnumMedicationOrderStatus {
+  Pending
+  Shipped
+  Delivered
+  Cancelled
+}
+
+enum EnumReviewProductType {
+  Doctor
+  Services
+  Medication
+}
+
+enum EnumReviewRating {
+  One
+  Two
+  Three
+  Four
+  Five
+}
+
+enum EnumCategoryCategories {
+  MentalHealth
+  Fitness
+  Nutrition
+  GeneralHealth
+  ChronicCondition
+}

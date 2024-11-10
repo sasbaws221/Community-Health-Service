@@ -1,0 +1,2522 @@
+[
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Discussion",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Discussion",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Discussion",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Discussion",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Discussion",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Discussion",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Discussion",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Discussion",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Discussion",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Discussion",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Discussion",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Discussion",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Discussion",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Discussion",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Discussion",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Discussion",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Discussion",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Discussion",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Discussion",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Discussion",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Comment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Comment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Appointment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Appointment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Appointment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Appointment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Appointment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Appointment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Appointment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Appointment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Appointment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Appointment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Appointment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Appointment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Appointment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Appointment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Appointment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Appointment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Appointment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Appointment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Appointment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Appointment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Contact",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Contact",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Contact",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contact",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Contact",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Contact",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Contact",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contact",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Contact",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Contact",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Contact",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contact",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Contact",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Contact",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Contact",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contact",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Contact",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Contact",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Contact",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contact",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "LocalEvent",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "LocalEvent",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "LocalEvent",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "LocalEvent",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "LocalEvent",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "LocalEvent",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "LocalEvent",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "LocalEvent",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "LocalEvent",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "LocalEvent",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "LocalEvent",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "LocalEvent",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "LocalEvent",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "LocalEvent",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "LocalEvent",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "LocalEvent",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "LocalEvent",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "LocalEvent",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "LocalEvent",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "LocalEvent",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthAndWellness",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthAndWellness",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthAndWellness",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthAndWellness",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthAndWellness",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthAndWellness",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthAndWellness",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthAndWellness",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthAndWellness",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthAndWellness",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthAndWellness",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthAndWellness",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthAndWellness",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthAndWellness",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthAndWellness",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthAndWellness",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthAndWellness",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthAndWellness",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthAndWellness",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthAndWellness",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "ResourcesAndAdvice",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "ResourcesAndAdvice",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "ResourcesAndAdvice",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ResourcesAndAdvice",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "ResourcesAndAdvice",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "ResourcesAndAdvice",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "ResourcesAndAdvice",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ResourcesAndAdvice",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "ResourcesAndAdvice",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "ResourcesAndAdvice",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "ResourcesAndAdvice",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ResourcesAndAdvice",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ResourcesAndAdvice",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "DailyActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "DailyActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "DailyActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "DailyActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "DailyActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "DailyActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "DailyActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "DailyActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "DailyActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "DailyActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "DailyActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "DailyActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "DailyActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "DailyActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "DailyActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "DailyActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "DailyActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "DailyActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "DailyActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "DailyActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "WellnessGoal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "WellnessGoal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "WellnessGoal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "WellnessGoal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "WellnessGoal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "WellnessGoal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "WellnessGoal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "WellnessGoal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "WellnessGoal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "WellnessGoal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "WellnessGoal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "WellnessGoal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "WellnessGoal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "WellnessGoal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "WellnessGoal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "WellnessGoal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "WellnessGoal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "WellnessGoal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "WellnessGoal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "WellnessGoal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthActivity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthActivity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthActivity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthActivity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "HealthActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "HealthActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "HealthActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "HealthActivity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Education",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Education",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Education",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Education",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Education",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Education",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Education",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Education",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Education",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Education",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Education",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Education",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Education",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Education",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Education",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Education",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Education",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Education",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Education",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Education",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CommunitySupport",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "CommunitySupport",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "CommunitySupport",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CommunitySupport",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CommunitySupport",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "CommunitySupport",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "CommunitySupport",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CommunitySupport",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CommunitySupport",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "CommunitySupport",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "CommunitySupport",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CommunitySupport",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CommunitySupport",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "CommunitySupport",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "CommunitySupport",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CommunitySupport",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "CommunitySupport",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "CommunitySupport",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "CommunitySupport",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CommunitySupport",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "FinancialAssistance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "FinancialAssistance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "FinancialAssistance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FinancialAssistance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "FinancialAssistance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "FinancialAssistance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "FinancialAssistance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FinancialAssistance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "FinancialAssistance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "FinancialAssistance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "FinancialAssistance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FinancialAssistance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "FinancialAssistance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "FinancialAssistance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "FinancialAssistance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FinancialAssistance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "FinancialAssistance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "FinancialAssistance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "FinancialAssistance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FinancialAssistance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Finance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Finance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Finance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Finance",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Finance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Finance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Finance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Finance",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Finance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Finance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Finance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Finance",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Finance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Finance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Finance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Finance",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Finance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Finance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Finance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Finance",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medication",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Medication",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Medication",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medication",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medication",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Medication",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Medication",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medication",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medication",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Medication",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Medication",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medication",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medication",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Medication",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Medication",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medication",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Medication",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Medication",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Medication",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Medication",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicationOrder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicationOrder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicationOrder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicationOrder",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicationOrder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicationOrder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicationOrder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicationOrder",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicationOrder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicationOrder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicationOrder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicationOrder",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicationOrder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicationOrder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicationOrder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicationOrder",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicationOrder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicationOrder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicationOrder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicationOrder",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Review",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Review",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Review",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Review",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Review",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Review",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Review",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Review",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Review",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Review",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Review",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Review",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Review",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Review",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Review",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Review",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Review",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Review",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Review",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Review",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Category",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Category",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Category",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Category",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Category",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Category",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Category",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Category",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Category",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Category",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Category",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Category",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Category",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Category",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Category",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicalPractitioner",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicalPractitioner",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicalPractitioner",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicalPractitioner",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicalPractitioner",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicalPractitioner",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicalPractitioner",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicalPractitioner",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicalPractitioner",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicalPractitioner",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicalPractitioner",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicalPractitioner",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicalPractitioner",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicalPractitioner",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicalPractitioner",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicalPractitioner",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "MedicalPractitioner",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "MedicalPractitioner",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "MedicalPractitioner",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "MedicalPractitioner",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Company",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Company",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Company",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Company",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Company",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Company",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Company",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Company",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Company",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Company",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Company",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Company",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Company",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Company",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Company",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Company",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Company",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "company",
+    "resource": "Company",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "MedicalPractitioner",
+    "resource": "Company",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Company",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]
