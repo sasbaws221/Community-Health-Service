@@ -1,0 +1,1952 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Appointment {
+  contact: Float
+  createdAt: DateTime!
+  email: String
+  id: String!
+  location: String
+  message: String
+  name: String
+  status: EnumAppointmentStatus
+  updatedAt: DateTime!
+}
+
+input AppointmentCreateInput {
+  contact: Float
+  email: String
+  location: String
+  message: String
+  name: String
+  status: EnumAppointmentStatus
+}
+
+input AppointmentOrderByInput {
+  contact: SortOrder
+  createdAt: SortOrder
+  email: SortOrder
+  id: SortOrder
+  location: SortOrder
+  message: SortOrder
+  name: SortOrder
+  status: SortOrder
+  updatedAt: SortOrder
+}
+
+input AppointmentUpdateInput {
+  contact: Float
+  email: String
+  location: String
+  message: String
+  name: String
+  status: EnumAppointmentStatus
+}
+
+input AppointmentWhereInput {
+  contact: IntNullableFilter
+  email: StringNullableFilter
+  id: StringFilter
+  location: StringNullableFilter
+  message: StringNullableFilter
+  name: StringNullableFilter
+  status: EnumAppointmentStatus
+}
+
+input AppointmentWhereUniqueInput {
+  id: String!
+}
+
+input BooleanNullableFilter {
+  equals: Boolean
+  not: Boolean
+}
+
+type Category {
+  categories: EnumCategoryCategories
+  createdAt: DateTime!
+  educations(orderBy: [EducationOrderByInput!], skip: Float, take: Float, where: EducationWhereInput): [Education!]!
+  healthAndWellnesses: HealthAndWellness
+  id: String!
+  resourcesAndAdvices(orderBy: [ResourcesAndAdviceOrderByInput!], skip: Float, take: Float, where: ResourcesAndAdviceWhereInput): [ResourcesAndAdvice!]!
+  updatedAt: DateTime!
+}
+
+input CategoryCreateInput {
+  categories: EnumCategoryCategories
+  educations: EducationCreateNestedManyWithoutCategoriesInput
+  healthAndWellnesses: HealthAndWellnessWhereUniqueInput
+  resourcesAndAdvices: ResourcesAndAdviceCreateNestedManyWithoutCategoriesInput
+}
+
+input CategoryOrderByInput {
+  categories: SortOrder
+  createdAt: SortOrder
+  healthAndWellnessesId: SortOrder
+  id: SortOrder
+  updatedAt: SortOrder
+}
+
+input CategoryUpdateInput {
+  categories: EnumCategoryCategories
+  educations: EducationUpdateManyWithoutCategoriesInput
+  healthAndWellnesses: HealthAndWellnessWhereUniqueInput
+  resourcesAndAdvices: ResourcesAndAdviceUpdateManyWithoutCategoriesInput
+}
+
+input CategoryWhereInput {
+  categories: EnumCategoryCategories
+  educations: EducationListRelationFilter
+  healthAndWellnesses: HealthAndWellnessWhereUniqueInput
+  id: StringFilter
+  resourcesAndAdvices: ResourcesAndAdviceListRelationFilter
+}
+
+input CategoryWhereUniqueInput {
+  id: String!
+}
+
+type Comment {
+  comments: String
+  createdAt: DateTime!
+  discussions: Discussion
+  healthAndWellnesses: HealthAndWellness
+  id: String!
+  localEvents: LocalEvent
+  resourcesAndAdvices: ResourcesAndAdvice
+  title: String
+  updatedAt: DateTime!
+  user: User
+}
+
+input CommentCreateInput {
+  comments: String
+  discussions: DiscussionWhereUniqueInput
+  healthAndWellnesses: HealthAndWellnessWhereUniqueInput
+  localEvents: LocalEventWhereUniqueInput
+  resourcesAndAdvices: ResourcesAndAdviceWhereUniqueInput
+  title: String
+  user: UserWhereUniqueInput
+}
+
+input CommentCreateNestedManyWithoutDiscussionsInput {
+  connect: [CommentWhereUniqueInput!]
+}
+
+input CommentCreateNestedManyWithoutHealthAndWellnessesInput {
+  connect: [CommentWhereUniqueInput!]
+}
+
+input CommentCreateNestedManyWithoutLocalEventsInput {
+  connect: [CommentWhereUniqueInput!]
+}
+
+input CommentCreateNestedManyWithoutResourcesAndAdvicesInput {
+  connect: [CommentWhereUniqueInput!]
+}
+
+input CommentCreateNestedManyWithoutUsersInput {
+  connect: [CommentWhereUniqueInput!]
+}
+
+input CommentListRelationFilter {
+  every: CommentWhereInput
+  none: CommentWhereInput
+  some: CommentWhereInput
+}
+
+input CommentOrderByInput {
+  comments: SortOrder
+  createdAt: SortOrder
+  discussionsId: SortOrder
+  healthAndWellnessesId: SortOrder
+  id: SortOrder
+  localEventsId: SortOrder
+  resourcesAndAdvicesId: SortOrder
+  title: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input CommentUpdateInput {
+  comments: String
+  discussions: DiscussionWhereUniqueInput
+  healthAndWellnesses: HealthAndWellnessWhereUniqueInput
+  localEvents: LocalEventWhereUniqueInput
+  resourcesAndAdvices: ResourcesAndAdviceWhereUniqueInput
+  title: String
+  user: UserWhereUniqueInput
+}
+
+input CommentUpdateManyWithoutDiscussionsInput {
+  connect: [CommentWhereUniqueInput!]
+  disconnect: [CommentWhereUniqueInput!]
+  set: [CommentWhereUniqueInput!]
+}
+
+input CommentUpdateManyWithoutHealthAndWellnessesInput {
+  connect: [CommentWhereUniqueInput!]
+  disconnect: [CommentWhereUniqueInput!]
+  set: [CommentWhereUniqueInput!]
+}
+
+input CommentUpdateManyWithoutLocalEventsInput {
+  connect: [CommentWhereUniqueInput!]
+  disconnect: [CommentWhereUniqueInput!]
+  set: [CommentWhereUniqueInput!]
+}
+
+input CommentUpdateManyWithoutResourcesAndAdvicesInput {
+  connect: [CommentWhereUniqueInput!]
+  disconnect: [CommentWhereUniqueInput!]
+  set: [CommentWhereUniqueInput!]
+}
+
+input CommentUpdateManyWithoutUsersInput {
+  connect: [CommentWhereUniqueInput!]
+  disconnect: [CommentWhereUniqueInput!]
+  set: [CommentWhereUniqueInput!]
+}
+
+input CommentWhereInput {
+  comments: StringNullableFilter
+  discussions: DiscussionWhereUniqueInput
+  healthAndWellnesses: HealthAndWellnessWhereUniqueInput
+  id: StringFilter
+  localEvents: LocalEventWhereUniqueInput
+  resourcesAndAdvices: ResourcesAndAdviceWhereUniqueInput
+  title: StringNullableFilter
+  user: UserWhereUniqueInput
+}
+
+input CommentWhereUniqueInput {
+  id: String!
+}
+
+type CommunitySupport {
+  createdAt: DateTime!
+  id: String!
+  isAdmin: Boolean
+  messageContent: String
+  sender: User
+  status: EnumCommunitySupportStatus
+  updatedAt: DateTime!
+}
+
+input CommunitySupportCreateInput {
+  isAdmin: Boolean
+  messageContent: String
+  sender: UserWhereUniqueInput
+  status: EnumCommunitySupportStatus
+}
+
+input CommunitySupportCreateNestedManyWithoutUsersInput {
+  connect: [CommunitySupportWhereUniqueInput!]
+}
+
+input CommunitySupportListRelationFilter {
+  every: CommunitySupportWhereInput
+  none: CommunitySupportWhereInput
+  some: CommunitySupportWhereInput
+}
+
+input CommunitySupportOrderByInput {
+  createdAt: SortOrder
+  id: SortOrder
+  isAdmin: SortOrder
+  messageContent: SortOrder
+  senderId: SortOrder
+  status: SortOrder
+  updatedAt: SortOrder
+}
+
+input CommunitySupportUpdateInput {
+  isAdmin: Boolean
+  messageContent: String
+  sender: UserWhereUniqueInput
+  status: EnumCommunitySupportStatus
+}
+
+input CommunitySupportUpdateManyWithoutUsersInput {
+  connect: [CommunitySupportWhereUniqueInput!]
+  disconnect: [CommunitySupportWhereUniqueInput!]
+  set: [CommunitySupportWhereUniqueInput!]
+}
+
+input CommunitySupportWhereInput {
+  id: StringFilter
+  isAdmin: BooleanNullableFilter
+  messageContent: StringNullableFilter
+  sender: UserWhereUniqueInput
+  status: EnumCommunitySupportStatus
+}
+
+input CommunitySupportWhereUniqueInput {
+  id: String!
+}
+
+type Company {
+  createdAt: DateTime!
+  description: String
+  id: String!
+  name: String
+  offers: String
+  price: Float
+  updatedAt: DateTime!
+}
+
+input CompanyCreateInput {
+  description: String
+  name: String
+  offers: String
+  price: Float
+}
+
+input CompanyOrderByInput {
+  createdAt: SortOrder
+  description: SortOrder
+  id: SortOrder
+  name: SortOrder
+  offers: SortOrder
+  price: SortOrder
+  updatedAt: SortOrder
+}
+
+input CompanyUpdateInput {
+  description: String
+  name: String
+  offers: String
+  price: Float
+}
+
+input CompanyWhereInput {
+  description: StringNullableFilter
+  id: StringFilter
+  name: StringNullableFilter
+  offers: StringNullableFilter
+  price: FloatNullableFilter
+}
+
+input CompanyWhereUniqueInput {
+  id: String!
+}
+
+type Contact {
+  contact: Float
+  createdAt: DateTime!
+  email: String
+  id: String!
+  message: String
+  name: String
+  status: EnumContactStatus
+  subject: String
+  updatedAt: DateTime!
+}
+
+input ContactCreateInput {
+  contact: Float
+  email: String
+  message: String
+  name: String
+  status: EnumContactStatus
+  subject: String
+}
+
+input ContactOrderByInput {
+  contact: SortOrder
+  createdAt: SortOrder
+  email: SortOrder
+  id: SortOrder
+  message: SortOrder
+  name: SortOrder
+  status: SortOrder
+  subject: SortOrder
+  updatedAt: SortOrder
+}
+
+input ContactUpdateInput {
+  contact: Float
+  email: String
+  message: String
+  name: String
+  status: EnumContactStatus
+  subject: String
+}
+
+input ContactWhereInput {
+  contact: IntNullableFilter
+  email: StringNullableFilter
+  id: StringFilter
+  message: StringNullableFilter
+  name: StringNullableFilter
+  status: EnumContactStatus
+  subject: StringNullableFilter
+}
+
+input ContactWhereUniqueInput {
+  id: String!
+}
+
+input Credentials {
+  password: String!
+  username: String!
+}
+
+type DailyActivity {
+  createdAt: DateTime!
+  date: DateTime
+  exercise: String
+  id: String!
+  meals: String
+  mood: EnumDailyActivityMood
+  note: String
+  sleepHours: Float
+  user: User
+  waterIntake: Float
+}
+
+input DailyActivityCreateInput {
+  date: DateTime
+  exercise: String
+  meals: String
+  mood: EnumDailyActivityMood
+  note: String
+  sleepHours: Float
+  user: UserWhereUniqueInput
+  waterIntake: Float
+}
+
+input DailyActivityCreateNestedManyWithoutUsersInput {
+  connect: [DailyActivityWhereUniqueInput!]
+}
+
+input DailyActivityListRelationFilter {
+  every: DailyActivityWhereInput
+  none: DailyActivityWhereInput
+  some: DailyActivityWhereInput
+}
+
+input DailyActivityOrderByInput {
+  createdAt: SortOrder
+  date: SortOrder
+  exercise: SortOrder
+  id: SortOrder
+  meals: SortOrder
+  mood: SortOrder
+  note: SortOrder
+  sleepHours: SortOrder
+  userId: SortOrder
+  waterIntake: SortOrder
+}
+
+input DailyActivityUpdateInput {
+  date: DateTime
+  exercise: String
+  meals: String
+  mood: EnumDailyActivityMood
+  note: String
+  sleepHours: Float
+  user: UserWhereUniqueInput
+  waterIntake: Float
+}
+
+input DailyActivityUpdateManyWithoutUsersInput {
+  connect: [DailyActivityWhereUniqueInput!]
+  disconnect: [DailyActivityWhereUniqueInput!]
+  set: [DailyActivityWhereUniqueInput!]
+}
+
+input DailyActivityWhereInput {
+  date: DateTimeNullableFilter
+  exercise: StringNullableFilter
+  id: StringFilter
+  meals: StringNullableFilter
+  mood: EnumDailyActivityMood
+  note: StringNullableFilter
+  sleepHours: DecimalNullableFilter
+  user: UserWhereUniqueInput
+  waterIntake: DecimalNullableFilter
+}
+
+input DailyActivityWhereUniqueInput {
+  id: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input DateTimeNullableFilter {
+  equals: DateTime
+  gt: DateTime
+  gte: DateTime
+  in: [DateTime!]
+  lt: DateTime
+  lte: DateTime
+  not: DateTime
+  notIn: [DateTime!]
+}
+
+input DecimalNullableFilter {
+  equals: Float
+  gt: Float
+  gte: Float
+  in: [Float!]
+  lt: Float
+  lte: Float
+  not: Float
+  notIn: [Float!]
+}
+
+type Discussion {
+  comment(orderBy: [CommentOrderByInput!], skip: Float, take: Float, where: CommentWhereInput): [Comment!]!
+  content: String
+  createdAt: DateTime!
+  id: String!
+  status: EnumDiscussionStatus
+  title: String
+  topic: EnumDiscussionTopic
+  updatedAt: DateTime!
+  user: User
+}
+
+input DiscussionCreateInput {
+  comment: CommentCreateNestedManyWithoutDiscussionsInput
+  content: String
+  status: EnumDiscussionStatus
+  title: String
+  topic: EnumDiscussionTopic
+  user: UserWhereUniqueInput
+}
+
+input DiscussionCreateNestedManyWithoutUsersInput {
+  connect: [DiscussionWhereUniqueInput!]
+}
+
+input DiscussionListRelationFilter {
+  every: DiscussionWhereInput
+  none: DiscussionWhereInput
+  some: DiscussionWhereInput
+}
+
+input DiscussionOrderByInput {
+  content: SortOrder
+  createdAt: SortOrder
+  id: SortOrder
+  status: SortOrder
+  title: SortOrder
+  topic: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input DiscussionUpdateInput {
+  comment: CommentUpdateManyWithoutDiscussionsInput
+  content: String
+  status: EnumDiscussionStatus
+  title: String
+  topic: EnumDiscussionTopic
+  user: UserWhereUniqueInput
+}
+
+input DiscussionUpdateManyWithoutUsersInput {
+  connect: [DiscussionWhereUniqueInput!]
+  disconnect: [DiscussionWhereUniqueInput!]
+  set: [DiscussionWhereUniqueInput!]
+}
+
+input DiscussionWhereInput {
+  comment: CommentListRelationFilter
+  content: StringNullableFilter
+  id: StringFilter
+  status: EnumDiscussionStatus
+  title: StringNullableFilter
+  topic: EnumDiscussionTopic
+  user: UserWhereUniqueInput
+}
+
+input DiscussionWhereUniqueInput {
+  id: String!
+}
+
+type Education {
+  category: Category
+  createdAt: DateTime!
+  description: EnumEducationDescription
+  difficultyLevel: EnumEducationDifficultyLevel
+  duration: String
+  id: String!
+  link: String
+  title: String
+  updatedAt: DateTime!
+  user(orderBy: [UserOrderByInput!], skip: Float, take: Float, where: UserWhereInput): [User!]!
+}
+
+input EducationCreateInput {
+  category: CategoryWhereUniqueInput
+  description: EnumEducationDescription
+  difficultyLevel: EnumEducationDifficultyLevel
+  duration: String
+  link: String
+  title: String
+  user: UserCreateNestedManyWithoutEducationsInput
+}
+
+input EducationCreateNestedManyWithoutCategoriesInput {
+  connect: [EducationWhereUniqueInput!]
+}
+
+input EducationCreateNestedManyWithoutUsersInput {
+  connect: [EducationWhereUniqueInput!]
+}
+
+input EducationListRelationFilter {
+  every: EducationWhereInput
+  none: EducationWhereInput
+  some: EducationWhereInput
+}
+
+input EducationOrderByInput {
+  categoryId: SortOrder
+  createdAt: SortOrder
+  description: SortOrder
+  difficultyLevel: SortOrder
+  duration: SortOrder
+  id: SortOrder
+  link: SortOrder
+  title: SortOrder
+  updatedAt: SortOrder
+}
+
+input EducationUpdateInput {
+  category: CategoryWhereUniqueInput
+  description: EnumEducationDescription
+  difficultyLevel: EnumEducationDifficultyLevel
+  duration: String
+  link: String
+  title: String
+  user: UserUpdateManyWithoutEducationsInput
+}
+
+input EducationUpdateManyWithoutCategoriesInput {
+  connect: [EducationWhereUniqueInput!]
+  disconnect: [EducationWhereUniqueInput!]
+  set: [EducationWhereUniqueInput!]
+}
+
+input EducationUpdateManyWithoutUsersInput {
+  connect: [EducationWhereUniqueInput!]
+  disconnect: [EducationWhereUniqueInput!]
+  set: [EducationWhereUniqueInput!]
+}
+
+input EducationWhereInput {
+  category: CategoryWhereUniqueInput
+  description: EnumEducationDescription
+  difficultyLevel: EnumEducationDifficultyLevel
+  duration: StringNullableFilter
+  id: StringFilter
+  link: StringNullableFilter
+  title: StringNullableFilter
+  user: UserListRelationFilter
+}
+
+input EducationWhereUniqueInput {
+  id: String!
+}
+
+enum EnumAppointmentStatus {
+  Cancelled
+  Completed
+  Rescheduled
+  Scheduled
+}
+
+enum EnumCategoryCategories {
+  ChronicCondition
+  Fitness
+  GeneralHealth
+  MentalHealth
+  Nutrition
+}
+
+enum EnumCommunitySupportStatus {
+  Read
+  Received
+  Sent
+}
+
+enum EnumContactStatus {
+  New
+  Read
+  Responded
+}
+
+enum EnumDailyActivityMood {
+  Energetic
+  Happy
+  Neutral
+  Sad
+  Stressed
+}
+
+enum EnumDiscussionStatus {
+  Closed
+  Open
+}
+
+enum EnumDiscussionTopic {
+  Events
+  Health
+  ResourcesAndAdvice
+  Tips
+}
+
+enum EnumEducationDescription {
+  ChronicCondition
+  Fitness
+  GeneralHealth
+  MentalHealth
+  Nutrition
+  SelfCare
+}
+
+enum EnumEducationDifficultyLevel {
+  Advanced
+  Beginner
+  Intermediate
+}
+
+enum EnumFinancialAssistanceStatus {
+  Approval
+  Pending
+  Rejected
+}
+
+enum EnumLocalEventCategory {
+  ExerciseClass
+  HealthScreening
+  Seminar
+  SupportGroup
+  Workshop
+}
+
+enum EnumMedicationOrderStatus {
+  Cancelled
+  Delivered
+  Pending
+  Shipped
+}
+
+enum EnumReviewProductType {
+  Doctor
+  Medication
+  Services
+}
+
+enum EnumReviewRating {
+  Five
+  Four
+  One
+  Three
+  Two
+}
+
+enum EnumWellnessGoalFrequency {
+  Daily
+  Monthly
+  Weekly
+}
+
+enum EnumWellnessGoalStatus {
+  Cancelled
+  Completed
+  InProgress
+  Paused
+}
+
+type Finance {
+  createdAt: DateTime!
+  description: String
+  financialAssistances: FinancialAssistance
+  id: String!
+  supportName: String
+  updatedAt: DateTime!
+}
+
+input FinanceCreateInput {
+  description: String
+  financialAssistances: FinancialAssistanceWhereUniqueInput
+  supportName: String
+}
+
+input FinanceOrderByInput {
+  createdAt: SortOrder
+  description: SortOrder
+  financialAssistancesId: SortOrder
+  id: SortOrder
+  supportName: SortOrder
+  updatedAt: SortOrder
+}
+
+input FinanceUpdateInput {
+  description: String
+  financialAssistances: FinancialAssistanceWhereUniqueInput
+  supportName: String
+}
+
+input FinanceWhereInput {
+  description: StringNullableFilter
+  financialAssistances: FinancialAssistanceWhereUniqueInput
+  id: StringFilter
+  supportName: StringNullableFilter
+}
+
+input FinanceWhereUniqueInput {
+  id: String!
+}
+
+type FinancialAssistance {
+  adminComments: String
+  amount: Float
+  createdAt: DateTime!
+  description: String
+  id: String!
+  status: EnumFinancialAssistanceStatus
+  supportType: Finance
+  updatedAt: DateTime!
+  user: User
+}
+
+input FinancialAssistanceCreateInput {
+  adminComments: String
+  amount: Float
+  description: String
+  status: EnumFinancialAssistanceStatus
+  supportType: FinanceWhereUniqueInput
+  user: UserWhereUniqueInput
+}
+
+input FinancialAssistanceCreateNestedManyWithoutUsersInput {
+  connect: [FinancialAssistanceWhereUniqueInput!]
+}
+
+input FinancialAssistanceListRelationFilter {
+  every: FinancialAssistanceWhereInput
+  none: FinancialAssistanceWhereInput
+  some: FinancialAssistanceWhereInput
+}
+
+input FinancialAssistanceOrderByInput {
+  adminComments: SortOrder
+  amount: SortOrder
+  createdAt: SortOrder
+  description: SortOrder
+  id: SortOrder
+  status: SortOrder
+  supportTypeId: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input FinancialAssistanceUpdateInput {
+  adminComments: String
+  amount: Float
+  description: String
+  status: EnumFinancialAssistanceStatus
+  supportType: FinanceWhereUniqueInput
+  user: UserWhereUniqueInput
+}
+
+input FinancialAssistanceUpdateManyWithoutUsersInput {
+  connect: [FinancialAssistanceWhereUniqueInput!]
+  disconnect: [FinancialAssistanceWhereUniqueInput!]
+  set: [FinancialAssistanceWhereUniqueInput!]
+}
+
+input FinancialAssistanceWhereInput {
+  adminComments: StringNullableFilter
+  amount: DecimalNullableFilter
+  description: StringNullableFilter
+  id: StringFilter
+  status: EnumFinancialAssistanceStatus
+  supportType: FinanceWhereUniqueInput
+  user: UserWhereUniqueInput
+}
+
+input FinancialAssistanceWhereUniqueInput {
+  id: String!
+}
+
+input FloatNullableFilter {
+  equals: Float
+  gt: Float
+  gte: Float
+  in: [Float!]
+  lt: Float
+  lte: Float
+  not: Float
+  notIn: [Float!]
+}
+
+type HealthActivity {
+  activity: String
+  activityDate: DateTime
+  createdAt: DateTime!
+  description: String
+  duration: Float
+  id: String!
+  note: String
+  updatedAt: DateTime!
+  user: User
+}
+
+input HealthActivityCreateInput {
+  activity: String
+  activityDate: DateTime
+  description: String
+  duration: Float
+  note: String
+  user: UserWhereUniqueInput
+}
+
+input HealthActivityCreateNestedManyWithoutUsersInput {
+  connect: [HealthActivityWhereUniqueInput!]
+}
+
+input HealthActivityListRelationFilter {
+  every: HealthActivityWhereInput
+  none: HealthActivityWhereInput
+  some: HealthActivityWhereInput
+}
+
+input HealthActivityOrderByInput {
+  activity: SortOrder
+  activityDate: SortOrder
+  createdAt: SortOrder
+  description: SortOrder
+  duration: SortOrder
+  id: SortOrder
+  note: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input HealthActivityUpdateInput {
+  activity: String
+  activityDate: DateTime
+  description: String
+  duration: Float
+  note: String
+  user: UserWhereUniqueInput
+}
+
+input HealthActivityUpdateManyWithoutUsersInput {
+  connect: [HealthActivityWhereUniqueInput!]
+  disconnect: [HealthActivityWhereUniqueInput!]
+  set: [HealthActivityWhereUniqueInput!]
+}
+
+input HealthActivityWhereInput {
+  activity: StringNullableFilter
+  activityDate: DateTimeNullableFilter
+  description: StringNullableFilter
+  duration: DecimalNullableFilter
+  id: StringFilter
+  note: StringNullableFilter
+  user: UserWhereUniqueInput
+}
+
+input HealthActivityWhereUniqueInput {
+  id: String!
+}
+
+type HealthAndWellness {
+  category: Category
+  comment(orderBy: [CommentOrderByInput!], skip: Float, take: Float, where: CommentWhereInput): [Comment!]!
+  content: String
+  createdAt: DateTime!
+  id: String!
+  tags: String
+  title: String
+  updatedAt: DateTime!
+  user(orderBy: [UserOrderByInput!], skip: Float, take: Float, where: UserWhereInput): [User!]!
+}
+
+input HealthAndWellnessCreateInput {
+  category: CategoryWhereUniqueInput
+  comment: CommentCreateNestedManyWithoutHealthAndWellnessesInput
+  content: String
+  tags: String
+  title: String
+  user: UserCreateNestedManyWithoutHealthAndWellnessesInput
+}
+
+input HealthAndWellnessCreateNestedManyWithoutUsersInput {
+  connect: [HealthAndWellnessWhereUniqueInput!]
+}
+
+input HealthAndWellnessListRelationFilter {
+  every: HealthAndWellnessWhereInput
+  none: HealthAndWellnessWhereInput
+  some: HealthAndWellnessWhereInput
+}
+
+input HealthAndWellnessOrderByInput {
+  categoryId: SortOrder
+  content: SortOrder
+  createdAt: SortOrder
+  id: SortOrder
+  tags: SortOrder
+  title: SortOrder
+  updatedAt: SortOrder
+}
+
+input HealthAndWellnessUpdateInput {
+  category: CategoryWhereUniqueInput
+  comment: CommentUpdateManyWithoutHealthAndWellnessesInput
+  content: String
+  tags: String
+  title: String
+  user: UserUpdateManyWithoutHealthAndWellnessesInput
+}
+
+input HealthAndWellnessUpdateManyWithoutUsersInput {
+  connect: [HealthAndWellnessWhereUniqueInput!]
+  disconnect: [HealthAndWellnessWhereUniqueInput!]
+  set: [HealthAndWellnessWhereUniqueInput!]
+}
+
+input HealthAndWellnessWhereInput {
+  category: CategoryWhereUniqueInput
+  comment: CommentListRelationFilter
+  content: StringNullableFilter
+  id: StringFilter
+  tags: StringNullableFilter
+  title: StringNullableFilter
+  user: UserListRelationFilter
+}
+
+input HealthAndWellnessWhereUniqueInput {
+  id: String!
+}
+
+input IntNullableFilter {
+  equals: Int
+  gt: Int
+  gte: Int
+  in: [Int!]
+  lt: Int
+  lte: Int
+  not: Int
+  notIn: [Int!]
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+type LocalEvent {
+  category: EnumLocalEventCategory
+  comment(orderBy: [CommentOrderByInput!], skip: Float, take: Float, where: CommentWhereInput): [Comment!]!
+  contact: Float
+  createdAt: DateTime!
+  description: String
+  eventDate: DateTime
+  id: String!
+  location: String
+  title: String
+  updatedAt: DateTime!
+  user(orderBy: [UserOrderByInput!], skip: Float, take: Float, where: UserWhereInput): [User!]!
+}
+
+input LocalEventCreateInput {
+  category: EnumLocalEventCategory
+  comment: CommentCreateNestedManyWithoutLocalEventsInput
+  contact: Float
+  description: String
+  eventDate: DateTime
+  location: String
+  title: String
+  user: UserCreateNestedManyWithoutLocalEventsInput
+}
+
+input LocalEventCreateNestedManyWithoutUsersInput {
+  connect: [LocalEventWhereUniqueInput!]
+}
+
+input LocalEventListRelationFilter {
+  every: LocalEventWhereInput
+  none: LocalEventWhereInput
+  some: LocalEventWhereInput
+}
+
+input LocalEventOrderByInput {
+  category: SortOrder
+  contact: SortOrder
+  createdAt: SortOrder
+  description: SortOrder
+  eventDate: SortOrder
+  id: SortOrder
+  location: SortOrder
+  title: SortOrder
+  updatedAt: SortOrder
+}
+
+input LocalEventUpdateInput {
+  category: EnumLocalEventCategory
+  comment: CommentUpdateManyWithoutLocalEventsInput
+  contact: Float
+  description: String
+  eventDate: DateTime
+  location: String
+  title: String
+  user: UserUpdateManyWithoutLocalEventsInput
+}
+
+input LocalEventUpdateManyWithoutUsersInput {
+  connect: [LocalEventWhereUniqueInput!]
+  disconnect: [LocalEventWhereUniqueInput!]
+  set: [LocalEventWhereUniqueInput!]
+}
+
+input LocalEventWhereInput {
+  category: EnumLocalEventCategory
+  comment: CommentListRelationFilter
+  contact: IntNullableFilter
+  description: StringNullableFilter
+  eventDate: DateTimeNullableFilter
+  id: StringFilter
+  location: StringNullableFilter
+  title: StringNullableFilter
+  user: UserListRelationFilter
+}
+
+input LocalEventWhereUniqueInput {
+  id: String!
+}
+
+type MedicalPractitioner {
+  bio: String
+  contact: String
+  createdAt: DateTime!
+  id: String!
+  licenseNumber: String
+  specialization: String
+  updatedAt: DateTime!
+  user: User
+  yearsOfExperience: String
+}
+
+input MedicalPractitionerCreateInput {
+  bio: String
+  contact: String
+  licenseNumber: String
+  specialization: String
+  user: UserWhereUniqueInput
+  yearsOfExperience: String
+}
+
+input MedicalPractitionerCreateNestedManyWithoutUsersInput {
+  connect: [MedicalPractitionerWhereUniqueInput!]
+}
+
+input MedicalPractitionerListRelationFilter {
+  every: MedicalPractitionerWhereInput
+  none: MedicalPractitionerWhereInput
+  some: MedicalPractitionerWhereInput
+}
+
+input MedicalPractitionerOrderByInput {
+  bio: SortOrder
+  contact: SortOrder
+  createdAt: SortOrder
+  id: SortOrder
+  licenseNumber: SortOrder
+  specialization: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+  yearsOfExperience: SortOrder
+}
+
+input MedicalPractitionerUpdateInput {
+  bio: String
+  contact: String
+  licenseNumber: String
+  specialization: String
+  user: UserWhereUniqueInput
+  yearsOfExperience: String
+}
+
+input MedicalPractitionerUpdateManyWithoutUsersInput {
+  connect: [MedicalPractitionerWhereUniqueInput!]
+  disconnect: [MedicalPractitionerWhereUniqueInput!]
+  set: [MedicalPractitionerWhereUniqueInput!]
+}
+
+input MedicalPractitionerWhereInput {
+  bio: StringNullableFilter
+  contact: StringNullableFilter
+  id: StringFilter
+  licenseNumber: StringNullableFilter
+  specialization: StringNullableFilter
+  user: UserWhereUniqueInput
+  yearsOfExperience: StringNullableFilter
+}
+
+input MedicalPractitionerWhereUniqueInput {
+  id: String!
+}
+
+type Medication {
+  category: String
+  createdAt: DateTime!
+  description: String
+  id: String!
+  medicationOrders(orderBy: [MedicationOrderOrderByInput!], skip: Float, take: Float, where: MedicationOrderWhereInput): [MedicationOrder!]!
+  name: String
+  recommendedFor: String
+  reviews(orderBy: [ReviewOrderByInput!], skip: Float, take: Float, where: ReviewWhereInput): [Review!]!
+  sideEffects: String
+  updatedAt: DateTime!
+}
+
+input MedicationCreateInput {
+  category: String
+  description: String
+  medicationOrders: MedicationOrderCreateNestedManyWithoutMedicationsInput
+  name: String
+  recommendedFor: String
+  reviews: ReviewCreateNestedManyWithoutMedicationsInput
+  sideEffects: String
+}
+
+input MedicationCreateNestedManyWithoutMedicationOrdersInput {
+  connect: [MedicationWhereUniqueInput!]
+}
+
+input MedicationListRelationFilter {
+  every: MedicationWhereInput
+  none: MedicationWhereInput
+  some: MedicationWhereInput
+}
+
+type MedicationOrder {
+  createdAt: DateTime!
+  deliveredAt: DateTime
+  id: String!
+  medication(orderBy: [MedicationOrderByInput!], skip: Float, take: Float, where: MedicationWhereInput): [Medication!]!
+  orderedAt: DateTime
+  quantity: Float
+  status: EnumMedicationOrderStatus
+  updatedAt: DateTime!
+  user: User
+}
+
+input MedicationOrderByInput {
+  category: SortOrder
+  createdAt: SortOrder
+  description: SortOrder
+  id: SortOrder
+  name: SortOrder
+  recommendedFor: SortOrder
+  sideEffects: SortOrder
+  updatedAt: SortOrder
+}
+
+input MedicationOrderCreateInput {
+  deliveredAt: DateTime
+  medication: MedicationCreateNestedManyWithoutMedicationOrdersInput
+  orderedAt: DateTime
+  quantity: Float
+  status: EnumMedicationOrderStatus
+  user: UserWhereUniqueInput
+}
+
+input MedicationOrderCreateNestedManyWithoutMedicationsInput {
+  connect: [MedicationOrderWhereUniqueInput!]
+}
+
+input MedicationOrderCreateNestedManyWithoutUsersInput {
+  connect: [MedicationOrderWhereUniqueInput!]
+}
+
+input MedicationOrderListRelationFilter {
+  every: MedicationOrderWhereInput
+  none: MedicationOrderWhereInput
+  some: MedicationOrderWhereInput
+}
+
+input MedicationOrderOrderByInput {
+  createdAt: SortOrder
+  deliveredAt: SortOrder
+  id: SortOrder
+  orderedAt: SortOrder
+  quantity: SortOrder
+  status: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input MedicationOrderUpdateInput {
+  deliveredAt: DateTime
+  medication: MedicationUpdateManyWithoutMedicationOrdersInput
+  orderedAt: DateTime
+  quantity: Float
+  status: EnumMedicationOrderStatus
+  user: UserWhereUniqueInput
+}
+
+input MedicationOrderUpdateManyWithoutMedicationsInput {
+  connect: [MedicationOrderWhereUniqueInput!]
+  disconnect: [MedicationOrderWhereUniqueInput!]
+  set: [MedicationOrderWhereUniqueInput!]
+}
+
+input MedicationOrderUpdateManyWithoutUsersInput {
+  connect: [MedicationOrderWhereUniqueInput!]
+  disconnect: [MedicationOrderWhereUniqueInput!]
+  set: [MedicationOrderWhereUniqueInput!]
+}
+
+input MedicationOrderWhereInput {
+  deliveredAt: DateTimeNullableFilter
+  id: StringFilter
+  medication: MedicationListRelationFilter
+  orderedAt: DateTimeNullableFilter
+  quantity: IntNullableFilter
+  status: EnumMedicationOrderStatus
+  user: UserWhereUniqueInput
+}
+
+input MedicationOrderWhereUniqueInput {
+  id: String!
+}
+
+input MedicationUpdateInput {
+  category: String
+  description: String
+  medicationOrders: MedicationOrderUpdateManyWithoutMedicationsInput
+  name: String
+  recommendedFor: String
+  reviews: ReviewUpdateManyWithoutMedicationsInput
+  sideEffects: String
+}
+
+input MedicationUpdateManyWithoutMedicationOrdersInput {
+  connect: [MedicationWhereUniqueInput!]
+  disconnect: [MedicationWhereUniqueInput!]
+  set: [MedicationWhereUniqueInput!]
+}
+
+input MedicationWhereInput {
+  category: StringNullableFilter
+  description: StringNullableFilter
+  id: StringFilter
+  medicationOrders: MedicationOrderListRelationFilter
+  name: StringNullableFilter
+  recommendedFor: StringNullableFilter
+  reviews: ReviewListRelationFilter
+  sideEffects: StringNullableFilter
+}
+
+input MedicationWhereUniqueInput {
+  id: String!
+}
+
+type MetaQueryPayload {
+  count: Float!
+}
+
+type Mutation {
+  createAppointment(data: AppointmentCreateInput!): Appointment!
+  createCategory(data: CategoryCreateInput!): Category!
+  createComment(data: CommentCreateInput!): Comment!
+  createCommunitySupport(data: CommunitySupportCreateInput!): CommunitySupport!
+  createCompany(data: CompanyCreateInput!): Company!
+  createContact(data: ContactCreateInput!): Contact!
+  createDailyActivity(data: DailyActivityCreateInput!): DailyActivity!
+  createDiscussion(data: DiscussionCreateInput!): Discussion!
+  createEducation(data: EducationCreateInput!): Education!
+  createFinance(data: FinanceCreateInput!): Finance!
+  createFinancialAssistance(data: FinancialAssistanceCreateInput!): FinancialAssistance!
+  createHealthActivity(data: HealthActivityCreateInput!): HealthActivity!
+  createHealthAndWellness(data: HealthAndWellnessCreateInput!): HealthAndWellness!
+  createLocalEvent(data: LocalEventCreateInput!): LocalEvent!
+  createMedicalPractitioner(data: MedicalPractitionerCreateInput!): MedicalPractitioner!
+  createMedication(data: MedicationCreateInput!): Medication!
+  createMedicationOrder(data: MedicationOrderCreateInput!): MedicationOrder!
+  createResourcesAndAdvice(data: ResourcesAndAdviceCreateInput!): ResourcesAndAdvice!
+  createReview(data: ReviewCreateInput!): Review!
+  createUser(data: UserCreateInput!): User!
+  createWellnessGoal(data: WellnessGoalCreateInput!): WellnessGoal!
+  deleteAppointment(where: AppointmentWhereUniqueInput!): Appointment!
+  deleteCategory(where: CategoryWhereUniqueInput!): Category!
+  deleteComment(where: CommentWhereUniqueInput!): Comment!
+  deleteCommunitySupport(where: CommunitySupportWhereUniqueInput!): CommunitySupport!
+  deleteCompany(where: CompanyWhereUniqueInput!): Company!
+  deleteContact(where: ContactWhereUniqueInput!): Contact!
+  deleteDailyActivity(where: DailyActivityWhereUniqueInput!): DailyActivity!
+  deleteDiscussion(where: DiscussionWhereUniqueInput!): Discussion!
+  deleteEducation(where: EducationWhereUniqueInput!): Education!
+  deleteFinance(where: FinanceWhereUniqueInput!): Finance!
+  deleteFinancialAssistance(where: FinancialAssistanceWhereUniqueInput!): FinancialAssistance!
+  deleteHealthActivity(where: HealthActivityWhereUniqueInput!): HealthActivity!
+  deleteHealthAndWellness(where: HealthAndWellnessWhereUniqueInput!): HealthAndWellness!
+  deleteLocalEvent(where: LocalEventWhereUniqueInput!): LocalEvent!
+  deleteMedicalPractitioner(where: MedicalPractitionerWhereUniqueInput!): MedicalPractitioner!
+  deleteMedication(where: MedicationWhereUniqueInput!): Medication!
+  deleteMedicationOrder(where: MedicationOrderWhereUniqueInput!): MedicationOrder!
+  deleteResourcesAndAdvice(where: ResourcesAndAdviceWhereUniqueInput!): ResourcesAndAdvice!
+  deleteReview(where: ReviewWhereUniqueInput!): Review!
+  deleteUser(where: UserWhereUniqueInput!): User!
+  deleteWellnessGoal(where: WellnessGoalWhereUniqueInput!): WellnessGoal!
+  login(credentials: Credentials!): UserInfo!
+  updateAppointment(data: AppointmentUpdateInput!, where: AppointmentWhereUniqueInput!): Appointment!
+  updateCategory(data: CategoryUpdateInput!, where: CategoryWhereUniqueInput!): Category!
+  updateComment(data: CommentUpdateInput!, where: CommentWhereUniqueInput!): Comment!
+  updateCommunitySupport(data: CommunitySupportUpdateInput!, where: CommunitySupportWhereUniqueInput!): CommunitySupport!
+  updateCompany(data: CompanyUpdateInput!, where: CompanyWhereUniqueInput!): Company!
+  updateContact(data: ContactUpdateInput!, where: ContactWhereUniqueInput!): Contact!
+  updateDailyActivity(data: DailyActivityUpdateInput!, where: DailyActivityWhereUniqueInput!): DailyActivity!
+  updateDiscussion(data: DiscussionUpdateInput!, where: DiscussionWhereUniqueInput!): Discussion!
+  updateEducation(data: EducationUpdateInput!, where: EducationWhereUniqueInput!): Education!
+  updateFinance(data: FinanceUpdateInput!, where: FinanceWhereUniqueInput!): Finance!
+  updateFinancialAssistance(data: FinancialAssistanceUpdateInput!, where: FinancialAssistanceWhereUniqueInput!): FinancialAssistance!
+  updateHealthActivity(data: HealthActivityUpdateInput!, where: HealthActivityWhereUniqueInput!): HealthActivity!
+  updateHealthAndWellness(data: HealthAndWellnessUpdateInput!, where: HealthAndWellnessWhereUniqueInput!): HealthAndWellness!
+  updateLocalEvent(data: LocalEventUpdateInput!, where: LocalEventWhereUniqueInput!): LocalEvent!
+  updateMedicalPractitioner(data: MedicalPractitionerUpdateInput!, where: MedicalPractitionerWhereUniqueInput!): MedicalPractitioner!
+  updateMedication(data: MedicationUpdateInput!, where: MedicationWhereUniqueInput!): Medication!
+  updateMedicationOrder(data: MedicationOrderUpdateInput!, where: MedicationOrderWhereUniqueInput!): MedicationOrder!
+  updateResourcesAndAdvice(data: ResourcesAndAdviceUpdateInput!, where: ResourcesAndAdviceWhereUniqueInput!): ResourcesAndAdvice!
+  updateReview(data: ReviewUpdateInput!, where: ReviewWhereUniqueInput!): Review!
+  updateUser(data: UserUpdateInput!, where: UserWhereUniqueInput!): User!
+  updateWellnessGoal(data: WellnessGoalUpdateInput!, where: WellnessGoalWhereUniqueInput!): WellnessGoal!
+}
+
+type Query {
+  _appointmentsMeta(where: AppointmentWhereInput): MetaQueryPayload!
+  _categoriesMeta(where: CategoryWhereInput): MetaQueryPayload!
+  _commentsMeta(where: CommentWhereInput): MetaQueryPayload!
+  _communitySupportsMeta(where: CommunitySupportWhereInput): MetaQueryPayload!
+  _companiesMeta(where: CompanyWhereInput): MetaQueryPayload!
+  _contactsMeta(where: ContactWhereInput): MetaQueryPayload!
+  _dailyActivitiesMeta(where: DailyActivityWhereInput): MetaQueryPayload!
+  _discussionsMeta(where: DiscussionWhereInput): MetaQueryPayload!
+  _educationsMeta(where: EducationWhereInput): MetaQueryPayload!
+  _financesMeta(where: FinanceWhereInput): MetaQueryPayload!
+  _financialAssistancesMeta(where: FinancialAssistanceWhereInput): MetaQueryPayload!
+  _healthActivitiesMeta(where: HealthActivityWhereInput): MetaQueryPayload!
+  _healthAndWellnessesMeta(where: HealthAndWellnessWhereInput): MetaQueryPayload!
+  _localEventsMeta(where: LocalEventWhereInput): MetaQueryPayload!
+  _medicalPractitionersMeta(where: MedicalPractitionerWhereInput): MetaQueryPayload!
+  _medicationOrdersMeta(where: MedicationOrderWhereInput): MetaQueryPayload!
+  _medicationsMeta(where: MedicationWhereInput): MetaQueryPayload!
+  _resourcesAndAdvicesMeta(where: ResourcesAndAdviceWhereInput): MetaQueryPayload!
+  _reviewsMeta(where: ReviewWhereInput): MetaQueryPayload!
+  _usersMeta(where: UserWhereInput): MetaQueryPayload!
+  _wellnessGoalsMeta(where: WellnessGoalWhereInput): MetaQueryPayload!
+  appointment(where: AppointmentWhereUniqueInput!): Appointment
+  appointments(orderBy: [AppointmentOrderByInput!], skip: Float, take: Float, where: AppointmentWhereInput): [Appointment!]!
+  categories(orderBy: [CategoryOrderByInput!], skip: Float, take: Float, where: CategoryWhereInput): [Category!]!
+  category(where: CategoryWhereUniqueInput!): Category
+  comment(where: CommentWhereUniqueInput!): Comment
+  comments(orderBy: [CommentOrderByInput!], skip: Float, take: Float, where: CommentWhereInput): [Comment!]!
+  communitySupport(where: CommunitySupportWhereUniqueInput!): CommunitySupport
+  communitySupports(orderBy: [CommunitySupportOrderByInput!], skip: Float, take: Float, where: CommunitySupportWhereInput): [CommunitySupport!]!
+  companies(orderBy: [CompanyOrderByInput!], skip: Float, take: Float, where: CompanyWhereInput): [Company!]!
+  company(where: CompanyWhereUniqueInput!): Company
+  contact(where: ContactWhereUniqueInput!): Contact
+  contacts(orderBy: [ContactOrderByInput!], skip: Float, take: Float, where: ContactWhereInput): [Contact!]!
+  dailyActivities(orderBy: [DailyActivityOrderByInput!], skip: Float, take: Float, where: DailyActivityWhereInput): [DailyActivity!]!
+  dailyActivity(where: DailyActivityWhereUniqueInput!): DailyActivity
+  discussion(where: DiscussionWhereUniqueInput!): Discussion
+  discussions(orderBy: [DiscussionOrderByInput!], skip: Float, take: Float, where: DiscussionWhereInput): [Discussion!]!
+  education(where: EducationWhereUniqueInput!): Education
+  educations(orderBy: [EducationOrderByInput!], skip: Float, take: Float, where: EducationWhereInput): [Education!]!
+  finance(where: FinanceWhereUniqueInput!): Finance
+  finances(orderBy: [FinanceOrderByInput!], skip: Float, take: Float, where: FinanceWhereInput): [Finance!]!
+  financialAssistance(where: FinancialAssistanceWhereUniqueInput!): FinancialAssistance
+  financialAssistances(orderBy: [FinancialAssistanceOrderByInput!], skip: Float, take: Float, where: FinancialAssistanceWhereInput): [FinancialAssistance!]!
+  healthActivities(orderBy: [HealthActivityOrderByInput!], skip: Float, take: Float, where: HealthActivityWhereInput): [HealthActivity!]!
+  healthActivity(where: HealthActivityWhereUniqueInput!): HealthActivity
+  healthAndWellness(where: HealthAndWellnessWhereUniqueInput!): HealthAndWellness
+  healthAndWellnesses(orderBy: [HealthAndWellnessOrderByInput!], skip: Float, take: Float, where: HealthAndWellnessWhereInput): [HealthAndWellness!]!
+  localEvent(where: LocalEventWhereUniqueInput!): LocalEvent
+  localEvents(orderBy: [LocalEventOrderByInput!], skip: Float, take: Float, where: LocalEventWhereInput): [LocalEvent!]!
+  medicalPractitioner(where: MedicalPractitionerWhereUniqueInput!): MedicalPractitioner
+  medicalPractitioners(orderBy: [MedicalPractitionerOrderByInput!], skip: Float, take: Float, where: MedicalPractitionerWhereInput): [MedicalPractitioner!]!
+  medication(where: MedicationWhereUniqueInput!): Medication
+  medicationOrder(where: MedicationOrderWhereUniqueInput!): MedicationOrder
+  medicationOrders(orderBy: [MedicationOrderOrderByInput!], skip: Float, take: Float, where: MedicationOrderWhereInput): [MedicationOrder!]!
+  medications(orderBy: [MedicationOrderByInput!], skip: Float, take: Float, where: MedicationWhereInput): [Medication!]!
+  resourcesAndAdvice(where: ResourcesAndAdviceWhereUniqueInput!): ResourcesAndAdvice
+  resourcesAndAdvices(orderBy: [ResourcesAndAdviceOrderByInput!], skip: Float, take: Float, where: ResourcesAndAdviceWhereInput): [ResourcesAndAdvice!]!
+  review(where: ReviewWhereUniqueInput!): Review
+  reviews(orderBy: [ReviewOrderByInput!], skip: Float, take: Float, where: ReviewWhereInput): [Review!]!
+  user(where: UserWhereUniqueInput!): User
+  userInfo: UserInfo!
+  users(orderBy: [UserOrderByInput!], skip: Float, take: Float, where: UserWhereInput): [User!]!
+  wellnessGoal(where: WellnessGoalWhereUniqueInput!): WellnessGoal
+  wellnessGoals(orderBy: [WellnessGoalOrderByInput!], skip: Float, take: Float, where: WellnessGoalWhereInput): [WellnessGoal!]!
+}
+
+enum QueryMode {
+  Default
+  Insensitive
+}
+
+type ResourcesAndAdvice {
+  author: String
+  category: Category
+  comment(orderBy: [CommentOrderByInput!], skip: Float, take: Float, where: CommentWhereInput): [Comment!]!
+  content: String
+  createdAt: DateTime!
+  id: String!
+  link: String
+  tag: String
+  title: String
+  updatedAt: DateTime!
+  user(orderBy: [UserOrderByInput!], skip: Float, take: Float, where: UserWhereInput): [User!]!
+}
+
+input ResourcesAndAdviceCreateInput {
+  author: String
+  category: CategoryWhereUniqueInput
+  comment: CommentCreateNestedManyWithoutResourcesAndAdvicesInput
+  content: String
+  link: String
+  tag: String
+  title: String
+  user: UserCreateNestedManyWithoutResourcesAndAdvicesInput
+}
+
+input ResourcesAndAdviceCreateNestedManyWithoutCategoriesInput {
+  connect: [ResourcesAndAdviceWhereUniqueInput!]
+}
+
+input ResourcesAndAdviceCreateNestedManyWithoutUsersInput {
+  connect: [ResourcesAndAdviceWhereUniqueInput!]
+}
+
+input ResourcesAndAdviceListRelationFilter {
+  every: ResourcesAndAdviceWhereInput
+  none: ResourcesAndAdviceWhereInput
+  some: ResourcesAndAdviceWhereInput
+}
+
+input ResourcesAndAdviceOrderByInput {
+  author: SortOrder
+  categoryId: SortOrder
+  content: SortOrder
+  createdAt: SortOrder
+  id: SortOrder
+  link: SortOrder
+  tag: SortOrder
+  title: SortOrder
+  updatedAt: SortOrder
+}
+
+input ResourcesAndAdviceUpdateInput {
+  author: String
+  category: CategoryWhereUniqueInput
+  comment: CommentUpdateManyWithoutResourcesAndAdvicesInput
+  content: String
+  link: String
+  tag: String
+  title: String
+  user: UserUpdateManyWithoutResourcesAndAdvicesInput
+}
+
+input ResourcesAndAdviceUpdateManyWithoutCategoriesInput {
+  connect: [ResourcesAndAdviceWhereUniqueInput!]
+  disconnect: [ResourcesAndAdviceWhereUniqueInput!]
+  set: [ResourcesAndAdviceWhereUniqueInput!]
+}
+
+input ResourcesAndAdviceUpdateManyWithoutUsersInput {
+  connect: [ResourcesAndAdviceWhereUniqueInput!]
+  disconnect: [ResourcesAndAdviceWhereUniqueInput!]
+  set: [ResourcesAndAdviceWhereUniqueInput!]
+}
+
+input ResourcesAndAdviceWhereInput {
+  author: StringNullableFilter
+  category: CategoryWhereUniqueInput
+  comment: CommentListRelationFilter
+  content: StringNullableFilter
+  id: StringFilter
+  link: StringNullableFilter
+  tag: StringNullableFilter
+  title: StringNullableFilter
+  user: UserListRelationFilter
+}
+
+input ResourcesAndAdviceWhereUniqueInput {
+  id: String!
+}
+
+type Review {
+  createdAt: DateTime!
+  id: String!
+  medication: Medication
+  productType: EnumReviewProductType
+  rating: EnumReviewRating
+  review: String
+  updatedAt: DateTime!
+  user: User
+}
+
+input ReviewCreateInput {
+  medication: MedicationWhereUniqueInput
+  productType: EnumReviewProductType
+  rating: EnumReviewRating
+  review: String
+  user: UserWhereUniqueInput
+}
+
+input ReviewCreateNestedManyWithoutMedicationsInput {
+  connect: [ReviewWhereUniqueInput!]
+}
+
+input ReviewCreateNestedManyWithoutUsersInput {
+  connect: [ReviewWhereUniqueInput!]
+}
+
+input ReviewListRelationFilter {
+  every: ReviewWhereInput
+  none: ReviewWhereInput
+  some: ReviewWhereInput
+}
+
+input ReviewOrderByInput {
+  createdAt: SortOrder
+  id: SortOrder
+  medicationId: SortOrder
+  productType: SortOrder
+  rating: SortOrder
+  review: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input ReviewUpdateInput {
+  medication: MedicationWhereUniqueInput
+  productType: EnumReviewProductType
+  rating: EnumReviewRating
+  review: String
+  user: UserWhereUniqueInput
+}
+
+input ReviewUpdateManyWithoutMedicationsInput {
+  connect: [ReviewWhereUniqueInput!]
+  disconnect: [ReviewWhereUniqueInput!]
+  set: [ReviewWhereUniqueInput!]
+}
+
+input ReviewUpdateManyWithoutUsersInput {
+  connect: [ReviewWhereUniqueInput!]
+  disconnect: [ReviewWhereUniqueInput!]
+  set: [ReviewWhereUniqueInput!]
+}
+
+input ReviewWhereInput {
+  id: StringFilter
+  medication: MedicationWhereUniqueInput
+  productType: EnumReviewProductType
+  rating: EnumReviewRating
+  review: StringNullableFilter
+  user: UserWhereUniqueInput
+}
+
+input ReviewWhereUniqueInput {
+  id: String!
+}
+
+enum SortOrder {
+  Asc
+  Desc
+}
+
+input StringFilter {
+  contains: String
+  endsWith: String
+  equals: String
+  gt: String
+  gte: String
+  in: [String!]
+  lt: String
+  lte: String
+  mode: QueryMode
+  not: String
+  notIn: [String!]
+  startsWith: String
+}
+
+input StringNullableFilter {
+  contains: String
+  endsWith: String
+  equals: String
+  gt: String
+  gte: String
+  in: [String!]
+  lt: String
+  lte: String
+  mode: QueryMode
+  not: String
+  notIn: [String!]
+  startsWith: String
+}
+
+type User {
+  comments(orderBy: [CommentOrderByInput!], skip: Float, take: Float, where: CommentWhereInput): [Comment!]!
+  communitySupports(orderBy: [CommunitySupportOrderByInput!], skip: Float, take: Float, where: CommunitySupportWhereInput): [CommunitySupport!]!
+  createdAt: DateTime!
+  dailyActivities(orderBy: [DailyActivityOrderByInput!], skip: Float, take: Float, where: DailyActivityWhereInput): [DailyActivity!]!
+  discussions(orderBy: [DiscussionOrderByInput!], skip: Float, take: Float, where: DiscussionWhereInput): [Discussion!]!
+  educations(orderBy: [EducationOrderByInput!], skip: Float, take: Float, where: EducationWhereInput): [Education!]!
+  email: String
+  financialAssistances(orderBy: [FinancialAssistanceOrderByInput!], skip: Float, take: Float, where: FinancialAssistanceWhereInput): [FinancialAssistance!]!
+  firstName: String
+  healthActivities(orderBy: [HealthActivityOrderByInput!], skip: Float, take: Float, where: HealthActivityWhereInput): [HealthActivity!]!
+  healthAndWellnesses(orderBy: [HealthAndWellnessOrderByInput!], skip: Float, take: Float, where: HealthAndWellnessWhereInput): [HealthAndWellness!]!
+  id: String!
+  isActive: Boolean
+  lastName: String
+  localEvents(orderBy: [LocalEventOrderByInput!], skip: Float, take: Float, where: LocalEventWhereInput): [LocalEvent!]!
+  medicalPractitioners(orderBy: [MedicalPractitionerOrderByInput!], skip: Float, take: Float, where: MedicalPractitionerWhereInput): [MedicalPractitioner!]!
+  medicationOrders(orderBy: [MedicationOrderOrderByInput!], skip: Float, take: Float, where: MedicationOrderWhereInput): [MedicationOrder!]!
+  resourcesAndAdvices(orderBy: [ResourcesAndAdviceOrderByInput!], skip: Float, take: Float, where: ResourcesAndAdviceWhereInput): [ResourcesAndAdvice!]!
+  reviews(orderBy: [ReviewOrderByInput!], skip: Float, take: Float, where: ReviewWhereInput): [Review!]!
+  roles: JSON!
+  updatedAt: DateTime!
+  username: String!
+  wellnessGoals(orderBy: [WellnessGoalOrderByInput!], skip: Float, take: Float, where: WellnessGoalWhereInput): [WellnessGoal!]!
+}
+
+input UserCreateInput {
+  comments: CommentCreateNestedManyWithoutUsersInput
+  communitySupports: CommunitySupportCreateNestedManyWithoutUsersInput
+  dailyActivities: DailyActivityCreateNestedManyWithoutUsersInput
+  discussions: DiscussionCreateNestedManyWithoutUsersInput
+  educations: EducationCreateNestedManyWithoutUsersInput
+  email: String
+  financialAssistances: FinancialAssistanceCreateNestedManyWithoutUsersInput
+  firstName: String
+  healthActivities: HealthActivityCreateNestedManyWithoutUsersInput
+  healthAndWellnesses: HealthAndWellnessCreateNestedManyWithoutUsersInput
+  isActive: Boolean
+  lastName: String
+  localEvents: LocalEventCreateNestedManyWithoutUsersInput
+  medicalPractitioners: MedicalPractitionerCreateNestedManyWithoutUsersInput
+  medicationOrders: MedicationOrderCreateNestedManyWithoutUsersInput
+  password: String!
+  resourcesAndAdvices: ResourcesAndAdviceCreateNestedManyWithoutUsersInput
+  reviews: ReviewCreateNestedManyWithoutUsersInput
+  roles: JSON!
+  username: String!
+  wellnessGoals: WellnessGoalCreateNestedManyWithoutUsersInput
+}
+
+input UserCreateNestedManyWithoutEducationsInput {
+  connect: [UserWhereUniqueInput!]
+}
+
+input UserCreateNestedManyWithoutHealthAndWellnessesInput {
+  connect: [UserWhereUniqueInput!]
+}
+
+input UserCreateNestedManyWithoutLocalEventsInput {
+  connect: [UserWhereUniqueInput!]
+}
+
+input UserCreateNestedManyWithoutResourcesAndAdvicesInput {
+  connect: [UserWhereUniqueInput!]
+}
+
+type UserInfo {
+  accessToken: String
+  id: String!
+  roles: [String!]!
+  username: String!
+}
+
+input UserListRelationFilter {
+  every: UserWhereInput
+  none: UserWhereInput
+  some: UserWhereInput
+}
+
+input UserOrderByInput {
+  createdAt: SortOrder
+  email: SortOrder
+  firstName: SortOrder
+  id: SortOrder
+  isActive: SortOrder
+  lastName: SortOrder
+  password: SortOrder
+  roles: SortOrder
+  updatedAt: SortOrder
+  username: SortOrder
+}
+
+input UserUpdateInput {
+  comments: CommentUpdateManyWithoutUsersInput
+  communitySupports: CommunitySupportUpdateManyWithoutUsersInput
+  dailyActivities: DailyActivityUpdateManyWithoutUsersInput
+  discussions: DiscussionUpdateManyWithoutUsersInput
+  educations: EducationUpdateManyWithoutUsersInput
+  email: String
+  financialAssistances: FinancialAssistanceUpdateManyWithoutUsersInput
+  firstName: String
+  healthActivities: HealthActivityUpdateManyWithoutUsersInput
+  healthAndWellnesses: HealthAndWellnessUpdateManyWithoutUsersInput
+  isActive: Boolean
+  lastName: String
+  localEvents: LocalEventUpdateManyWithoutUsersInput
+  medicalPractitioners: MedicalPractitionerUpdateManyWithoutUsersInput
+  medicationOrders: MedicationOrderUpdateManyWithoutUsersInput
+  password: String
+  resourcesAndAdvices: ResourcesAndAdviceUpdateManyWithoutUsersInput
+  reviews: ReviewUpdateManyWithoutUsersInput
+  roles: JSON
+  username: String
+  wellnessGoals: WellnessGoalUpdateManyWithoutUsersInput
+}
+
+input UserUpdateManyWithoutEducationsInput {
+  connect: [UserWhereUniqueInput!]
+  disconnect: [UserWhereUniqueInput!]
+  set: [UserWhereUniqueInput!]
+}
+
+input UserUpdateManyWithoutHealthAndWellnessesInput {
+  connect: [UserWhereUniqueInput!]
+  disconnect: [UserWhereUniqueInput!]
+  set: [UserWhereUniqueInput!]
+}
+
+input UserUpdateManyWithoutLocalEventsInput {
+  connect: [UserWhereUniqueInput!]
+  disconnect: [UserWhereUniqueInput!]
+  set: [UserWhereUniqueInput!]
+}
+
+input UserUpdateManyWithoutResourcesAndAdvicesInput {
+  connect: [UserWhereUniqueInput!]
+  disconnect: [UserWhereUniqueInput!]
+  set: [UserWhereUniqueInput!]
+}
+
+input UserWhereInput {
+  comments: CommentListRelationFilter
+  communitySupports: CommunitySupportListRelationFilter
+  dailyActivities: DailyActivityListRelationFilter
+  discussions: DiscussionListRelationFilter
+  educations: EducationListRelationFilter
+  email: StringNullableFilter
+  financialAssistances: FinancialAssistanceListRelationFilter
+  firstName: StringNullableFilter
+  healthActivities: HealthActivityListRelationFilter
+  healthAndWellnesses: HealthAndWellnessListRelationFilter
+  id: StringFilter
+  isActive: BooleanNullableFilter
+  lastName: StringNullableFilter
+  localEvents: LocalEventListRelationFilter
+  medicalPractitioners: MedicalPractitionerListRelationFilter
+  medicationOrders: MedicationOrderListRelationFilter
+  resourcesAndAdvices: ResourcesAndAdviceListRelationFilter
+  reviews: ReviewListRelationFilter
+  username: StringFilter
+  wellnessGoals: WellnessGoalListRelationFilter
+}
+
+input UserWhereUniqueInput {
+  id: String!
+}
+
+type WellnessGoal {
+  createdAt: DateTime!
+  currentProgress: Float
+  endDate: DateTime
+  frequency: EnumWellnessGoalFrequency
+  goal: String
+  id: String!
+  startDate: DateTime
+  status: EnumWellnessGoalStatus
+  targetValue: Float
+  updatedAt: DateTime!
+  user: User
+}
+
+input WellnessGoalCreateInput {
+  currentProgress: Float
+  endDate: DateTime
+  frequency: EnumWellnessGoalFrequency
+  goal: String
+  startDate: DateTime
+  status: EnumWellnessGoalStatus
+  targetValue: Float
+  user: UserWhereUniqueInput
+}
+
+input WellnessGoalCreateNestedManyWithoutUsersInput {
+  connect: [WellnessGoalWhereUniqueInput!]
+}
+
+input WellnessGoalListRelationFilter {
+  every: WellnessGoalWhereInput
+  none: WellnessGoalWhereInput
+  some: WellnessGoalWhereInput
+}
+
+input WellnessGoalOrderByInput {
+  createdAt: SortOrder
+  currentProgress: SortOrder
+  endDate: SortOrder
+  frequency: SortOrder
+  goal: SortOrder
+  id: SortOrder
+  startDate: SortOrder
+  status: SortOrder
+  targetValue: SortOrder
+  updatedAt: SortOrder
+  userId: SortOrder
+}
+
+input WellnessGoalUpdateInput {
+  currentProgress: Float
+  endDate: DateTime
+  frequency: EnumWellnessGoalFrequency
+  goal: String
+  startDate: DateTime
+  status: EnumWellnessGoalStatus
+  targetValue: Float
+  user: UserWhereUniqueInput
+}
+
+input WellnessGoalUpdateManyWithoutUsersInput {
+  connect: [WellnessGoalWhereUniqueInput!]
+  disconnect: [WellnessGoalWhereUniqueInput!]
+  set: [WellnessGoalWhereUniqueInput!]
+}
+
+input WellnessGoalWhereInput {
+  currentProgress: DecimalNullableFilter
+  endDate: DateTimeNullableFilter
+  frequency: EnumWellnessGoalFrequency
+  goal: StringNullableFilter
+  id: StringFilter
+  startDate: DateTimeNullableFilter
+  status: EnumWellnessGoalStatus
+  targetValue: DecimalNullableFilter
+  user: UserWhereUniqueInput
+}
+
+input WellnessGoalWhereUniqueInput {
+  id: String!
+}

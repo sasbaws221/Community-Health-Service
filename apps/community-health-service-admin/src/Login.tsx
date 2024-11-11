@@ -16,25 +16,6 @@ const Login = ({ theme }: any) => {
         <div className={`${CLASS_NAME}__wrapper`}>
           <div className={`${CLASS_NAME}__box`}>
             <img
-              src="https://amplication.com/assets/graphql.png"
-              alt="GraphQL API"
-            />
-            <h2>Connect via GraphQL</h2>
-            <div className={`${CLASS_NAME}__box__message`}>
-              Connect to the server using GraphQL API with a complete and
-              understandable description of the data in your API
-            </div>
-            <Button
-              type="button"
-              variant="contained"
-              color="primary"
-              href={`${BASE_URI}/graphql`}
-            >
-              Continue
-            </Button>
-          </div>
-          <div className={`${CLASS_NAME}__box`}>
-            <img
               src="https://amplication.com/assets/react-admin.png"
               alt="React-Admin"
             />
@@ -45,34 +26,7 @@ const Login = ({ theme }: any) => {
             </div>
             <LoginForm />
           </div>
-          <div className={`${CLASS_NAME}__box`}>
-            <img
-              src="https://amplication.com/assets/restapi.png"
-              alt="REST API"
-            />
-            <h2>Connect via REST API</h2>
-            <div className={`${CLASS_NAME}__box__message`}>
-              Connect to the server using REST API with a built-in Swagger
-              documentation
-            </div>
-            <Button
-              type="button"
-              variant="contained"
-              color="primary"
-              href={`${BASE_URI}/api`}
-            >
-              Continue
-            </Button>
-          </div>
-
           <Notification />
-        </div>
-        <div className={`${CLASS_NAME}__read-more`}>
-          <span>Read </span>
-          <a href="https://docs.amplication.com/api" target="docs">
-            Amplication docs
-          </a>
-          <span> to learn more</span>
         </div>
       </div>
     </ThemeProvider>
